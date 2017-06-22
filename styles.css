@@ -1,17 +1,21 @@
 body {
-  font-family: AvenirNextLTPro-Bold;
+  font-family: 'Questrial', sans-serif;
   margin: 0;
-  color: #353535;
+  color: #000000;
+  line-height: 1.35;
 }
 @font-face {
-    font-family: AvenirNextLTPro-Bold;
-    src: url(AvenirNextLTPro-Bold.otf);
+  font-family: AvenirNextLTPro-Bold;
+  src: url(AvenirNextLTPro-Bold.otf);
 }
 .wrapper {
   background-image: url(background.jpg);
+  background-attachment: fixed;
+  padding-top: 72px;
 }
 .container {
-
+  background: #FFFFFF;
+  margin: auto 10%;
 }
 .sticky {
   position: fixed;
@@ -34,31 +38,47 @@ nav ul {
   list-style: none;
 }
 nav li {
-  font-weight: bold;
+  color: white;
 }
 .nav-collapse a:hover {
   background: white;
   color: black;
   border-radius: 15px;
 }
-nav a:visited {
+nav a, nav a:visited {
   color: white;
 }
 a {
   text-decoration: none;
 }
 section {
-  padding: 2em 0.5em 0.5em 0.5em;
+  padding: 1.5em 1em 0.5em 1em;
+  border-color: black;
+  border-width: medium;
+  border-left-style: solid;
+  border-right-style: solid;
 }
 #personal_data {
-  padding-top: 4em;
+  padding-top: 1em;
 }
 #awards_portfolio {
+  /*margin-bottom: 1em;*/
+}
+section h2 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
   margin-bottom: 1em;
 }
 section img {
   float: right;
 }
+blockquote {
+  border-left: 5px solid black;
+  padding-left: 2em;
+  margin: 0;
+}
+
+/*
 section p {
   background-color: white;
   opacity: 0.95;
@@ -71,8 +91,9 @@ section h2 {
   background-color: white;
   opacity: 0.975;
   border-radius: 50px;
-  padding: 0;
+  padding-bottom: 1em;
 }
+*/
 #personal_data h2, #qualifications h2 {
     margin: 0 35%;
 }
@@ -179,6 +200,14 @@ footer p {
     margin: 0 0 0 1em;
     position: fixed;
   }
+  .container {
+    margin: auto 20%;
+  }
+  .wrapper {
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    padding-top: 74px;
+  }
   nav ul {
     display: flex;
   }
@@ -188,7 +217,7 @@ footer p {
     text-align: center;
   }
   nav a {
-      transition: .5s;
+    transition: .5s;
   }
   nav a:hover {
     background: white;
@@ -198,13 +227,13 @@ footer p {
   section {
     padding-top: 2em;
   }
-  #awards_portfolio {
-    margin-bottom: 1em;
-  }
   section img {
     float: right;
   }
-  section p {
+  #personal_data {
+    padding-top: 1.5em;
+  }
+  /*section p {
     background-color: white;
     opacity: 0.965;
     border-radius: 16px;
@@ -217,6 +246,6 @@ footer p {
     opacity: 0.965;
     border-radius: 50px;
     margin: 0 42%;
-    padding: 0;
+    padding: 0; */
   }
 }
